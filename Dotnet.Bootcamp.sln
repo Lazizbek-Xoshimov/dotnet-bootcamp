@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delegate", "Delegate", "{A2892575-7FD5-416F-805D-6B983149FB4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateProject", "DelegateProject\DelegateProject.csproj", "{5388B33F-3D24-4EEF-B752-2076AD53FBBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateProject", "DelegateProject\DelegateProject.csproj", "{5388B33F-3D24-4EEF-B752-2076AD53FBBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoProject", "PhotoProject\PhotoProject.csproj", "{E5055FA5-8A4A-4D8D-A421-88065198FCC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +19,16 @@ Global
 		{5388B33F-3D24-4EEF-B752-2076AD53FBBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5388B33F-3D24-4EEF-B752-2076AD53FBBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5388B33F-3D24-4EEF-B752-2076AD53FBBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5055FA5-8A4A-4D8D-A421-88065198FCC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5055FA5-8A4A-4D8D-A421-88065198FCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5055FA5-8A4A-4D8D-A421-88065198FCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5055FA5-8A4A-4D8D-A421-88065198FCC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5388B33F-3D24-4EEF-B752-2076AD53FBBC} = {A2892575-7FD5-416F-805D-6B983149FB4F}
+		{E5055FA5-8A4A-4D8D-A421-88065198FCC8} = {A2892575-7FD5-416F-805D-6B983149FB4F}
 	EndGlobalSection
 EndGlobal
