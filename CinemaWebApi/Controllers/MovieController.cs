@@ -17,6 +17,11 @@ namespace CinemaWebApi.Controllers
         {
             _dbContext = dbContext;
         }
+
+        /// <summary>
+        /// This is getAll request.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Movies>>> GetUsers()
         {
