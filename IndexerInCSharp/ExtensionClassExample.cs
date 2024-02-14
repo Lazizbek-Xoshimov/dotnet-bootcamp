@@ -21,7 +21,7 @@ namespace IndexerInCSharp
             }
         }
 
-        public static void PrintAllGenericConsole<T>(this List<GenericXodim<T>> list) where T : struct
+        public static void PrintAllGenericConsole<T>(this List<GenericXodim<T>> list) where T : class
         {
             for (int i = 0; i < list.Count; i++)
             {

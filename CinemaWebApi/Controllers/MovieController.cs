@@ -5,6 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CinemaWebApi.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class MovieController : ControllerBase
@@ -24,6 +27,11 @@ namespace CinemaWebApi.Controllers
             return await _dbContext.Movies.ToListAsync();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<Movies>> GetMovie(int id)
         {
@@ -39,6 +47,11 @@ namespace CinemaWebApi.Controllers
             return movie;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="movies"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> CreateMovie(Movies movies)
         {
@@ -51,6 +64,12 @@ namespace CinemaWebApi.Controllers
             return _dbContext.Movies.Any(x => x.Id == id);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="movies"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(int id, Movies movies)
         {
@@ -78,11 +97,16 @@ namespace CinemaWebApi.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete ("{id}")]
         public async Task<IActionResult> DeleteMovie(int id)
         {
             var movie = await _dbContext.Movies.FindAsync(id);
-            if(movie != null)
+            if (movie == null)
             {
                 return NotFound();
             }
